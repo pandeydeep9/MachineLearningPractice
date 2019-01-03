@@ -38,7 +38,7 @@ pylab.ylabel("RMSE")
 pylab.legend(["Train","Test"],loc = 2)
 pylab.show()
 
-#Looking at the curvee best value of lambda 0.08
+#Looking at the curve best value of lambda is 0.08
 lambda_reg = 0.08
 model = np.dot(np.dot(np.linalg.inv(np.dot(x_train.transpose(),x_train) + lambda_reg * np.identity(degree)), x_train.transpose()), y_train)
 predicted = np.dot(model,[np.power(x,i) for i in xrange(0,degree)])
