@@ -16,6 +16,6 @@ pylab.plot(noise,'r')
 
 pylab.xlabel('x')
 pylab.ylabel('y')
-pylab.legend(["Without noise", "With Noise", "Noise"], loc = 2)
+pylab.legend(["Without noise", "With Noise", "Noise"], loc = 1)
 
 pylab.show()
