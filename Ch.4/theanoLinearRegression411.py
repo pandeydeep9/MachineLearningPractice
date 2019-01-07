@@ -26,6 +26,8 @@ error = (squared_error(pred,y))
 loss = error.mean() + lambdaVal * l2(w)
 gw, gb = T.grad(loss,[w,b])
 
+'''HEre the shared variables are w and b. So their values are passed on when we try to predict
+y from our x'''0
 train = theano.function(inputs = [x,y], outputs = [pred,error], updates = ((w,w-0.01*gw),(b,b-0.01*gb) ))
 predict = theano.function(inputs = [x],outputs = pred)
 
