@@ -1,5 +1,4 @@
 #Now the options for activation functions
-#choices of optimization algorithhms in keras
 import numpy as np 
 from keras.models import Sequential
 from keras.layers import Dense,Activation
