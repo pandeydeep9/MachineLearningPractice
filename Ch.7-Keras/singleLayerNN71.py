@@ -21,7 +21,7 @@ score = model.evaluate(data,labels,verbose = 0)
 print("Before Training: ", zip(model.metrics_names,score))
 
 #train
-model.fit(data, labels, nb_epoch=10,batch_size=32,verbose=0)
+model.fit(data, labels, epochs=10,batch_size=32,verbose=0)
 
 score = model.evaluate(data,labels,verbose=0)
 print("After Training: ", zip(model.metrics_names,score) )
